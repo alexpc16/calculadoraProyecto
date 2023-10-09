@@ -128,9 +128,12 @@ public class Resolver {
         double b = operandos.pop();
         double a = operandos.pop();
         char operador = operadores.pop();
+        System.out.println("a " + a);
+        System.out.println("b "+ b);
+        System.out.println("op " + operador);
         switch (operador) {
             case '^':
-
+                operandos.push(Math.pow(a,b));
                 System.out.println("potencia");
 
                 break;
